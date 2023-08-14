@@ -1,24 +1,23 @@
-import Vue from "vue"
-import VueRouter from "vue-router"
-import Home from "@/views/Home"
-import About from "@/views/About"
-
-Vue.use(VueRouter)
+import * as VueRouter from "vue-router"
+import HomePage from "@/views/HomePage"
+import AboutPage from "@/views/AboutPage"
 
 const routes = [
     {
         path: "/",
-        name: "Home",
-        component: Home
+        name: "HomePage",
+        component: HomePage
     },
 
     {
         path: "/about",
-        name: "About",
-        component: About
+        name: "AboutPage",
+        component: AboutPage
     }
 ]
 
-const router = VueRouter({routes})
+const router = VueRouter.createRouter({
+    history: VueRouter.createWebHistory(),
+    routes})
 
 export default router
