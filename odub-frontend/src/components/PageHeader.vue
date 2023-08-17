@@ -1,11 +1,21 @@
 <template>
     <header class="header">
-        <div id="top-header"> 
-            <div class="logo-div">
-                <img id="logo" src="../assets/images/logo.png"/>
-            </div>  
-            <h3 id="logo-text"><em>Overdrive and Under Budget</em></h3>
-        </div>    
+
+        <div class="logo-div">
+            <img id="logo" src="../assets/images/logo.png"/>
+        </div>  
+
+        <div class="header-text">
+            <h3 id="logo-text">Overdrive and Under Budget</h3>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul id="navbar">
+                <a href="/home">Home</a>
+                <a href="/about">About</a>
+            </ul>             
+        </nav>  
+
     </header>
 </template>
 
@@ -17,32 +27,43 @@ export default {
 
 <style>
 .header {
-    height: 100px;
-    width: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    display: flex;
+    align-items: center;
     background-color: #BA0C2F;
+    border-bottom: 2px solid black;
+    height: 100px;
 }
 
-#logo-text {
-    display: inline-block;
-    vertical-align: middle;
+.header-text {
     color: white;
-    padding-left: 7px;
+    padding-left: 10px;
+    font-family: 'League Spartan', sans-serif;
 }
 
-#logo {
+.logo-div {
+    height: 100px;
+}
+
+.logo-div img {
     height: 100px;
     width: 100px;
 }
 
-.top-header {
-    background-color: #BA0C2F;
+.nav-bar {
+    margin-left: auto;
 }
 
-.logo-div {
-    display: inline-block;
-    vertical-align: middle;
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
 }
 
 </style>
