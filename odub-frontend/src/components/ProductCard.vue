@@ -27,6 +27,8 @@ export default {
     border-width: 2px;
     border-radius: 15px;
     width: 220px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card img {
