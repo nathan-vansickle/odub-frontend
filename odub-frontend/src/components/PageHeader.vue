@@ -11,7 +11,7 @@
         
         <nav class="nav-bar">
             <ul id="navbar">
-                <a href="/home">Home</a>
+                <a href="/">Home</a>
                 <a href="/about">About</a>
             </ul>             
         </nav>  
