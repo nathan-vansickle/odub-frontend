@@ -1,9 +1,6 @@
 <template>
     <div class="content">
         <div class="product-container">
-            <!-- Will use v-for to iterate over an array of objects
-            containing the data necessary to create each card
-            object -->
             <ProductCard v-for="product in testContent" :key="product.name" :image="product.image" :name="product.name" :price="product.price" :vendor="product.vendor" :link="product.link"/>
         </div>
     </div>

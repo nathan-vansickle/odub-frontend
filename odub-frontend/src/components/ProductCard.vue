@@ -29,6 +29,7 @@ export default {
     width: 220px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 .card img {
